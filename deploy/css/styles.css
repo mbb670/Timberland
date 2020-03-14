@@ -321,6 +321,28 @@ ul {
   ul li {
     list-style: none; }
 
+.title {
+  display: flex;
+  flex-direction: row-reverse; }
+  .title li {
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-orientation: mixed;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    font-size: 1.25rem;
+    position: relative; }
+    .title li::after {
+      display: block;
+      background-color: #DDA62A;
+      width: 10px;
+      height: 100%;
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      left: 0; }
+
 /* =============
     Typography
 ============= */
@@ -354,4 +376,16 @@ textarea {
 ============= */
 /* =============
     Footer
+============= */
+/* =============
+    Hero
+============= */
+/* =============
+    Section 1
+============= */
+/* =============
+    Section 2
+============= */
+/* =============
+    Section 3
 ============= */

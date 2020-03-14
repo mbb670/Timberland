@@ -1,15 +1,42 @@
 /* =============
     Base
 ============= */
-figure{
+figure {
     padding: 0;
     margin: 0;
 }
 
-ul{
+ul {
     padding: 0;
     margin: 0;
-    li{
+
+    li {
         list-style: none;
+    }
+}
+
+.title {
+    display: flex;
+    flex-direction: row-reverse;
+    li {
+        font-family: sofia-pro, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-orientation: mixed;
+        white-space: nowrap;
+        writing-mode: vertical-rl;
+        font-size: rem-calc(20);
+        position: relative;
+        &::after{
+            display: block;
+            background-color: $gold;
+            width: 10px;
+            height: 100%;
+            content:'';
+            position: absolute;
+            bottom:-100px;
+            left:0;
+
+        }
     }
 }
