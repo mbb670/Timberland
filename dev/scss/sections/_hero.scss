@@ -1,3 +1,25 @@
 /* =============
     Hero
 ============= */
+#hero {
+    > div {
+        padding-top: 43vh;
+        margin-left: 5vw;
+        div {
+            background-image: url("../img/hero/FullLogo.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 250px;
+            height: 45px;
+            // border:2px solid red;
+            display: block;
+        }
+
+        h3 {
+            font-family: sofia-pro;
+            color: $gold;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+    }
+}

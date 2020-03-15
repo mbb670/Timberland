@@ -15,36 +15,72 @@ ul {
     }
 }
 
-body{
+body {
     overflow-x: hidden;
     position: relative;
 }
 
-#background{
+#section1,
+#section2,
+#section3 {
+    display: none;
+}
+
+#background {
     overflow-x: hidden;
     position: absolute;
     width: 100vw;
-    // left:1px;
-    svg{
-        // transform: scale(.2);
-        width:2360px;
-        margin-left: -1215px;
-        margin-top:-200px;
-        g{
-                .md, .lg{
-                    display: none;
-                }
+    z-index: -1;
 
+    svg {
+        width: 2360px;
+        // margin-left: -1215px;
+        margin-left: calc(-1280px + 30vw);
+        // margin-top: -200px;
+        margin-top: calc(-500px + 50vh);
+        @include md{
+            width: 4667px;
+            // margin-left: -1782px;
+            margin-left: calc(-2166px + 50vw);
+            margin-top: -600px;
+            margin-top: calc(-1500px + 80vh);
+        }
+        @include xxl{
 
         }
 
-    }
+        >g {
+            .xl,
+            .md {
+                display: none;
+            }
+            @include md{
+                .md{
+                    display: block;
+                }
+                .sm {
+                    display: none;
+                }
+            }
 
+            @include xxl{
+                .md{
+                    display: none;
+                }
+                .xl{
+                    display: block;
+                }
+            }
+
+        }
+    }
 }
 
 .title {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
+
     li {
         font-family: sofia-pro, sans-serif;
         font-weight: 700;
@@ -54,16 +90,16 @@ body{
         writing-mode: vertical-rl;
         font-size: rem-calc(20);
         position: relative;
-        &::after{
+
+        &::after {
             display: block;
             background-color: $gold;
             width: 10px;
             height: 100%;
-            content:'';
+            content: '';
             position: absolute;
-            bottom:0;
-            left:0;
-
+            bottom: 0;
+            left: 0;
         }
     }
 }
