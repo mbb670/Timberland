@@ -325,10 +325,14 @@ body {
   overflow-x: hidden;
   position: relative; }
 
+main {
+  overflow-x: hidden; }
+
 #section1,
 #section2,
 #section3 {
-  display: none; }
+  width: 80vw;
+  margin: 0 auto; }
 
 #background {
   overflow-x: hidden;
@@ -344,9 +348,9 @@ body {
         width: 4667px;
         margin-left: calc(-2166px + 50vw);
         margin-top: -600px;
-        margin-top: calc(-1500px + 80vh); } }
-    #background svg > g .xl,
-    #background svg > g .md {
+        margin-top: calc(-1400px + 80vh); } }
+    #background svg > g .md,
+    #background svg > g .xl {
       display: none; }
     @media (min-width: 768px) {
       #background svg > g .md {
@@ -362,25 +366,49 @@ body {
 .title {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  margin-bottom: 20px; }
   .title li {
     font-family: sofia-pro, sans-serif;
     font-weight: 700;
-    font-style: normal;
     text-orientation: mixed;
     white-space: nowrap;
     writing-mode: vertical-rl;
     font-size: 1.25rem;
-    position: relative; }
+    height: 200px;
+    overflow: hidden;
+    margin-right: 3px; }
+    @media (min-width: 768px) {
+      .title li {
+        font-size: 1.75rem;
+        height: 250px; } }
     .title li::after {
-      display: block;
+      display: inline-block;
       background-color: #DDA62A;
-      width: 10px;
+      width: 80%;
       height: 100%;
       content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0; }
+      margin-top: 5px; }
+
+p {
+  font-family: sofia-pro, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.75rem; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.125rem; } }
+  @media (min-width: 992px) {
+    p {
+      font-size: 1.25rem; } }
+
+.bootimg {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  margin-left: calc(-210px + 50vw);
+  margin-bottom: -30px; }
 
 /* =============
     Typography
@@ -419,28 +447,42 @@ textarea {
 /* =============
     Hero
 ============= */
-#hero > div {
-  padding-top: 43vh;
-  margin-left: 5vw; }
-  #hero > div div {
-    background-image: url("../img/hero/FullLogo.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 250px;
-    height: 45px;
-    display: block; }
-  #hero > div h3 {
-    font-family: sofia-pro;
-    color: #DDA62A;
-    font-weight: 700;
-    margin-top: 10px; }
+#hero {
+  height: 100vh; }
+  #hero > div {
+    padding-top: 43vh;
+    margin-left: 5vw; }
+    #hero > div div {
+      background-image: url("../img/universal/FullLogo.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 250px;
+      height: 45px;
+      display: block; }
+      @media (min-width: 768px) {
+        #hero > div div {
+          width: 425px;
+          height: 75px; } }
+    #hero > div h3 {
+      font-family: sofia-pro;
+      color: #DDA62A;
+      font-weight: 700;
+      margin-top: 10px; }
 
 /* =============
     Section 1
 ============= */
+#section1 {
+  margin-top: calc(-50vh + 300px); }
+  #section1 > div .bootimg {
+    background-image: url("../img/universal/boot1.png"); }
+
 /* =============
     Section 2
 ============= */
+#section2 {
+  margin-top: 300px; }
+
 /* =============
     Section 3
 ============= */

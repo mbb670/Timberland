@@ -1,3 +1,11 @@
 /* =============
     Section 1
 ============= */
+#section1{
+    margin-top: calc(-50vh + 300px);
+    >div{
+        .bootimg{
+            background-image: url('../img/universal/boot1.png');
+        }
+    }
+}

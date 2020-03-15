@@ -19,11 +19,18 @@ body {
     overflow-x: hidden;
     position: relative;
 }
+main{
+    overflow-x: hidden;
+}
 
 #section1,
 #section2,
 #section3 {
-    display: none;
+    // display: none;
+    // margin-top: 300px;
+    width: 80vw;
+    margin: 0 auto;
+
 }
 
 #background {
@@ -38,68 +45,95 @@ body {
         margin-left: calc(-1280px + 30vw);
         // margin-top: -200px;
         margin-top: calc(-500px + 50vh);
-        @include md{
+        @include md {
             width: 4667px;
             // margin-left: -1782px;
             margin-left: calc(-2166px + 50vw);
             margin-top: -600px;
-            margin-top: calc(-1500px + 80vh);
+            margin-top: calc(-1400px + 80vh);
         }
-        @include xxl{
+        @include xxl {}
 
-        }
-
-        >g {
-            .xl,
-            .md {
+        > g {
+            .md,
+            .xl {
                 display: none;
             }
-            @include md{
-                .md{
+            @include md {
+                .md {
                     display: block;
                 }
+
                 .sm {
                     display: none;
                 }
             }
-
-            @include xxl{
-                .md{
+            @include xxl {
+                .md {
                     display: none;
                 }
-                .xl{
+
+                .xl {
                     display: block;
                 }
             }
-
         }
     }
 }
+
 
 .title {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    margin-bottom: 20px;
 
     li {
         font-family: sofia-pro, sans-serif;
         font-weight: 700;
-        font-style: normal;
         text-orientation: mixed;
         white-space: nowrap;
         writing-mode: vertical-rl;
         font-size: rem-calc(20);
-        position: relative;
+        height: 200px;
+        overflow: hidden;
+        margin-right: 3px;
+        @include md {
+            font-size: rem-calc(28);
+            height: 250px;
+        }
 
         &::after {
-            display: block;
+            display: inline-block;
             background-color: $gold;
-            width: 10px;
+            width: 80%;
             height: 100%;
             content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
+            margin-top: 5px;
         }
     }
+}
+
+p{
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    line-height: rem-calc(28);
+    @include md{
+        font-size: rem-calc(18);
+    }
+    @include lg{
+        font-size: rem-calc(20);
+    }
+
+}
+
+.bootimg {
+    background-repeat: no-repeat;
+    // position: absolute;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin-left: calc(-210px + 50vw);
+    margin-bottom: -30px;
 }

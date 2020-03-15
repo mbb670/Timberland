@@ -2,17 +2,22 @@
     Hero
 ============= */
 #hero {
+    height: 100vh;
     > div {
         padding-top: 43vh;
         margin-left: 5vw;
         div {
-            background-image: url("../img/hero/FullLogo.svg");
+            background-image: url("../img/universal/FullLogo.svg");
             background-repeat: no-repeat;
             background-size: contain;
             width: 250px;
             height: 45px;
             // border:2px solid red;
             display: block;
+            @include md{
+                width:425px;
+                height:75px;
+            }
         }
 
         h3 {
