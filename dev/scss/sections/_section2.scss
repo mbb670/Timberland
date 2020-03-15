@@ -2,5 +2,24 @@
     Section 2
 ============= */
 #section2{
-    margin-top: 300px;
+    margin-top: 550px;
+    // margin-left: 25vw;
+
+    >div{
+        article{
+            p{
+                margin-left: 22vw;
+                // width:54vw;
+                width:173px;
+            }
+        }
+        .bootimg{
+            background-image: url('../img/universal/boot2.png');
+            display: none;
+            @include md{
+
+                display: block;
+            }
+        }
+    }
 }

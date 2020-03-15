@@ -2,10 +2,30 @@
     Section 1
 ============= */
 #section1{
-    margin-top: calc(-50vh + 300px);
+    margin-top: calc(-50vh + 330px);
+    height:584px;
+    @include sm{
+        width: 400px;
+        margin-left: 10vw;
+    }
+    @include md{
+        // margin-top: calc(-10vh + 600px);
+        margin-top: 200px;
+    }
     >div{
+        @include md{
+            display: flex;
+            flex-direction: column-reverse;
+        }
         .bootimg{
             background-image: url('../img/universal/boot1.png');
+            @include sm{
+                margin-bottom: -220px;
+            }
+            @include md{
+                margin-bottom: 0;
+                margin-top: 170px;
+            }
         }
     }
 }

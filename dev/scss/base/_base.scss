@@ -2,13 +2,13 @@
     Base
 ============= */
 figure {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 ul {
-    padding: 0;
     margin: 0;
+    padding: 0;
 
     li {
         list-style: none;
@@ -19,18 +19,33 @@ body {
     overflow-x: hidden;
     position: relative;
 }
-main{
+
+main {
     overflow-x: hidden;
+    @include md{
+        overflow-y: hidden;
+    }
 }
 
 #section1,
 #section2,
 #section3 {
+    margin: 0 auto;
     // display: none;
     // margin-top: 300px;
     width: 80vw;
-    margin: 0 auto;
-
+    // overflow-x: hidden;
+    >div{
+        article{
+            @include md{
+                display: flex;
+                .title{
+                    margin-right: 30px;
+                    margin-top: -100px;
+                }
+            }
+        }
+    }
 }
 
 #background {
@@ -40,21 +55,23 @@ main{
     z-index: -1;
 
     svg {
-        width: 2360px;
-        // margin-left: -1215px;
         margin-left: calc(-1280px + 30vw);
-        // margin-top: -200px;
         margin-top: calc(-500px + 50vh);
+        width: 2360px;
         @include md {
-            width: 4667px;
-            // margin-left: -1782px;
             margin-left: calc(-2166px + 50vw);
-            margin-top: -600px;
             margin-top: calc(-1400px + 80vh);
+            width: 4667px;
         }
         @include xxl {}
 
         > g {
+            .black-lines {
+                path {
+                    stroke-width: 30;
+                }
+            }
+
             .md,
             .xl {
                 display: none;
@@ -81,7 +98,6 @@ main{
     }
 }
 
-
 .title {
     display: flex;
     flex-direction: row-reverse;
@@ -90,50 +106,59 @@ main{
 
     li {
         font-family: sofia-pro, sans-serif;
+        font-size: rem-calc(20);
         font-weight: 700;
+        height: 200px;
+        margin-right: 3px;
+        overflow: hidden;
         text-orientation: mixed;
         white-space: nowrap;
         writing-mode: vertical-rl;
-        font-size: rem-calc(20);
-        height: 200px;
-        overflow: hidden;
-        margin-right: 3px;
         @include md {
             font-size: rem-calc(28);
             height: 250px;
         }
 
         &::after {
-            display: inline-block;
             background-color: $gold;
-            width: 80%;
-            height: 100%;
             content: '';
+            display: inline-block;
+            height: 100%;
             margin-top: 5px;
+            width: 80%;
         }
     }
 }
 
-p{
+p {
     font-family: sofia-pro, sans-serif;
-    font-weight: 400;
     font-style: italic;
+    font-weight: 400;
     line-height: rem-calc(28);
-    @include md{
+    @include md {
         font-size: rem-calc(18);
     }
-    @include lg{
+    @include lg {
         font-size: rem-calc(20);
     }
-
 }
 
 .bootimg {
     background-repeat: no-repeat;
     // position: absolute;
     background-size: contain;
-    width: 400px;
     height: 400px;
-    margin-left: calc(-210px + 50vw);
     margin-bottom: -30px;
+    margin-left: calc(-210px + 50vw);
+    width: 400px;
+    @include sm{
+        margin-left: calc(-280px + 50vw);
+        height: 600px;
+        width: 600px;
+    }
+    @include md{
+        height: 720px;
+        width: 720px;
+        margin-left: calc(-330px + 50vw);
+    }
 }

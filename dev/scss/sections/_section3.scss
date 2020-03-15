@@ -1,3 +1,25 @@
 /* =============
     Section 3
 ============= */
+#section3{
+    margin-top: 280px;
+    @include sm{
+    margin-top: 300px;
+    }
+    >div{
+        article{
+                p{
+                    @include sm{
+                        width: 450px;
+                    }
+                }
+            }
+        .bootimg{
+            background-image: url('../img/universal/boot3.png');
+            margin-bottom: -130px;
+            @include sm{
+            margin-bottom: -320px;
+            }
+        }
+    }
+}

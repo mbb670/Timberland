@@ -312,12 +312,12 @@ template {
     Base
 ============= */
 figure {
-  padding: 0;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 ul {
-  padding: 0;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
   ul li {
     list-style: none; }
 
@@ -327,12 +327,25 @@ body {
 
 main {
   overflow-x: hidden; }
+  @media (min-width: 768px) {
+    main {
+      overflow-y: hidden; } }
 
 #section1,
 #section2,
 #section3 {
-  width: 80vw;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 80vw; }
+  @media (min-width: 768px) {
+    #section1 > div article,
+    #section2 > div article,
+    #section3 > div article {
+      display: flex; }
+      #section1 > div article .title,
+      #section2 > div article .title,
+      #section3 > div article .title {
+        margin-right: 30px;
+        margin-top: -100px; } }
 
 #background {
   overflow-x: hidden;
@@ -340,15 +353,16 @@ main {
   width: 100vw;
   z-index: -1; }
   #background svg {
-    width: 2360px;
     margin-left: calc(-1280px + 30vw);
-    margin-top: calc(-500px + 50vh); }
+    margin-top: calc(-500px + 50vh);
+    width: 2360px; }
     @media (min-width: 768px) {
       #background svg {
-        width: 4667px;
         margin-left: calc(-2166px + 50vw);
-        margin-top: -600px;
-        margin-top: calc(-1400px + 80vh); } }
+        margin-top: calc(-1400px + 80vh);
+        width: 4667px; } }
+    #background svg > g .black-lines path {
+      stroke-width: 30; }
     #background svg > g .md,
     #background svg > g .xl {
       display: none; }
@@ -370,30 +384,30 @@ main {
   margin-bottom: 20px; }
   .title li {
     font-family: sofia-pro, sans-serif;
+    font-size: 1.25rem;
     font-weight: 700;
+    height: 200px;
+    margin-right: 3px;
+    overflow: hidden;
     text-orientation: mixed;
     white-space: nowrap;
-    writing-mode: vertical-rl;
-    font-size: 1.25rem;
-    height: 200px;
-    overflow: hidden;
-    margin-right: 3px; }
+    writing-mode: vertical-rl; }
     @media (min-width: 768px) {
       .title li {
         font-size: 1.75rem;
         height: 250px; } }
     .title li::after {
-      display: inline-block;
       background-color: #DDA62A;
-      width: 80%;
-      height: 100%;
       content: '';
-      margin-top: 5px; }
+      display: inline-block;
+      height: 100%;
+      margin-top: 5px;
+      width: 80%; }
 
 p {
   font-family: sofia-pro, sans-serif;
-  font-weight: 400;
   font-style: italic;
+  font-weight: 400;
   line-height: 1.75rem; }
   @media (min-width: 768px) {
     p {
@@ -405,10 +419,20 @@ p {
 .bootimg {
   background-repeat: no-repeat;
   background-size: contain;
-  width: 400px;
   height: 400px;
+  margin-bottom: -30px;
   margin-left: calc(-210px + 50vw);
-  margin-bottom: -30px; }
+  width: 400px; }
+  @media (min-width: 576px) {
+    .bootimg {
+      margin-left: calc(-280px + 50vw);
+      height: 600px;
+      width: 600px; } }
+  @media (min-width: 768px) {
+    .bootimg {
+      height: 720px;
+      width: 720px;
+      margin-left: calc(-330px + 50vw); } }
 
 /* =============
     Typography
@@ -473,16 +497,58 @@ textarea {
     Section 1
 ============= */
 #section1 {
-  margin-top: calc(-50vh + 300px); }
+  margin-top: calc(-50vh + 330px);
+  height: 584px; }
+  @media (min-width: 576px) {
+    #section1 {
+      width: 400px;
+      margin-left: 10vw; } }
+  @media (min-width: 768px) {
+    #section1 {
+      margin-top: 200px; } }
+  @media (min-width: 768px) {
+    #section1 > div {
+      display: flex;
+      flex-direction: column-reverse; } }
   #section1 > div .bootimg {
     background-image: url("../img/universal/boot1.png"); }
+    @media (min-width: 576px) {
+      #section1 > div .bootimg {
+        margin-bottom: -220px; } }
+    @media (min-width: 768px) {
+      #section1 > div .bootimg {
+        margin-bottom: 0;
+        margin-top: 170px; } }
 
 /* =============
     Section 2
 ============= */
 #section2 {
-  margin-top: 300px; }
+  margin-top: 550px; }
+  #section2 > div article p {
+    margin-left: 22vw;
+    width: 173px; }
+  #section2 > div .bootimg {
+    background-image: url("../img/universal/boot2.png");
+    display: none; }
+    @media (min-width: 768px) {
+      #section2 > div .bootimg {
+        display: block; } }
 
 /* =============
     Section 3
 ============= */
+#section3 {
+  margin-top: 280px; }
+  @media (min-width: 576px) {
+    #section3 {
+      margin-top: 300px; } }
+  @media (min-width: 576px) {
+    #section3 > div article p {
+      width: 450px; } }
+  #section3 > div .bootimg {
+    background-image: url("../img/universal/boot3.png");
+    margin-bottom: -130px; }
+    @media (min-width: 576px) {
+      #section3 > div .bootimg {
+        margin-bottom: -320px; } }
