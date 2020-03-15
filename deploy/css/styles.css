@@ -352,6 +352,10 @@ main {
   position: absolute;
   width: 100vw;
   z-index: -1; }
+  @media (min-width: 768px) {
+    #background {
+      height: 5000px;
+      overflow-y: hidden; } }
   #background svg {
     margin-left: calc(-1280px + 30vw);
     margin-top: calc(-500px + 50vh);
@@ -430,9 +434,9 @@ p {
       width: 600px; } }
   @media (min-width: 768px) {
     .bootimg {
-      height: 720px;
-      width: 720px;
-      margin-left: calc(-330px + 50vw); } }
+      height: 820px;
+      width: 820px;
+      margin-left: calc(-430px + 50vw); } }
 
 /* =============
     Typography
@@ -505,7 +509,7 @@ textarea {
       margin-left: 10vw; } }
   @media (min-width: 768px) {
     #section1 {
-      margin-top: 200px; } }
+      margin-top: calc(-20vh + 360px); } }
   @media (min-width: 768px) {
     #section1 > div {
       display: flex;
@@ -518,21 +522,32 @@ textarea {
     @media (min-width: 768px) {
       #section1 > div .bootimg {
         margin-bottom: 0;
-        margin-top: 170px; } }
+        margin-top: 150px; } }
 
 /* =============
     Section 2
 ============= */
 #section2 {
   margin-top: 550px; }
+  @media (min-width: 768px) {
+    #section2 {
+      margin-top: 700px; } }
+  @media (min-width: 768px) {
+    #section2 > div article {
+      margin-left: 30vw; } }
   #section2 > div article p {
     margin-left: 22vw;
     width: 173px; }
+    @media (min-width: 768px) {
+      #section2 > div article p {
+        width: 230px;
+        margin-left: 0; } }
   #section2 > div .bootimg {
     background-image: url("../img/universal/boot2.png");
     display: none; }
     @media (min-width: 768px) {
       #section2 > div .bootimg {
+        margin-left: calc(-750px + 50vw);
         display: block; } }
 
 /* =============
@@ -543,12 +558,21 @@ textarea {
   @media (min-width: 576px) {
     #section3 {
       margin-top: 300px; } }
+  @media (min-width: 768px) {
+    #section3 {
+      margin-top: 30px; } }
   @media (min-width: 576px) {
     #section3 > div article p {
       width: 450px; } }
+  @media (min-width: 768px) {
+    #section3 > div article p {
+      width: 200px; } }
   #section3 > div .bootimg {
     background-image: url("../img/universal/boot3.png");
     margin-bottom: -130px; }
     @media (min-width: 576px) {
       #section3 > div .bootimg {
         margin-bottom: -320px; } }
+    @media (min-width: 768px) {
+      #section3 > div .bootimg {
+        margin-bottom: 80px; } }

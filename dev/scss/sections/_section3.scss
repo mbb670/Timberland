@@ -6,11 +6,18 @@
     @include sm{
     margin-top: 300px;
     }
+    @include md{
+        margin-top: 30px;
+    }
     >div{
         article{
                 p{
                     @include sm{
                         width: 450px;
+                    }
+                    @include md{
+
+                            width: 200px;
                     }
                 }
             }
@@ -19,6 +26,9 @@
             margin-bottom: -130px;
             @include sm{
             margin-bottom: -320px;
+            }
+            @include md{
+                margin-bottom: 80px;
             }
         }
     }

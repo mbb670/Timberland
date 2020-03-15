@@ -3,21 +3,29 @@
 ============= */
 #section2{
     margin-top: 550px;
-    // margin-left: 25vw;
+    @include md{
+    margin-top: 700px;
+    }
 
     >div{
         article{
+            @include md{
+                margin-left:30vw;
+            }
             p{
                 margin-left: 22vw;
-                // width:54vw;
                 width:173px;
+                @include md{
+                    width:230px;
+                    margin-left:0;
+                }
             }
         }
         .bootimg{
             background-image: url('../img/universal/boot2.png');
             display: none;
             @include md{
-
+                margin-left: calc(-750px + 50vw);
                 display: block;
             }
         }

@@ -53,6 +53,10 @@ main {
     position: absolute;
     width: 100vw;
     z-index: -1;
+    @include md{
+        height:5000px;
+        overflow-y: hidden;
+    }
 
     svg {
         margin-left: calc(-1280px + 30vw);
@@ -157,8 +161,8 @@ p {
         width: 600px;
     }
     @include md{
-        height: 720px;
-        width: 720px;
-        margin-left: calc(-330px + 50vw);
+        height: 820px;
+        width: 820px;
+        margin-left: calc(-430px + 50vw);
     }
 }
