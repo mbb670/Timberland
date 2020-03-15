@@ -358,7 +358,7 @@ main {
       height: 5020px; } }
   @media (min-width: 1400px) {
     #background {
-      height: 5600px; } }
+      height: 5700px; } }
   #background svg {
     margin-left: calc(-1280px + 30vw);
     margin-top: calc(-500px + 50vh);
@@ -437,6 +437,11 @@ p {
       height: 820px;
       width: 820px;
       margin-left: calc(-430px + 50vw); } }
+  @media (min-width: 1400px) {
+    .bootimg {
+      height: 1000px;
+      width: 1000px;
+      margin-left: calc(-500px + 50vw); } }
 
 /* =============
     Typography
@@ -481,6 +486,9 @@ footer {
   @media (min-width: 992px) {
     footer {
       margin-top: 1000px; } }
+  @media (min-width: 1400px) {
+    footer {
+      margin-top: 1300px; } }
   footer div {
     display: flex;
     justify-content: center; }
@@ -505,6 +513,10 @@ footer {
       @media (min-width: 992px) {
         footer div h2 {
           font-size: 1.5rem; } }
+      @media (min-width: 1400px) {
+        footer div h2 {
+          font-size: 1.875rem;
+          border-left: 50vw solid #DDA62A; } }
       footer div h2 a {
         text-decoration: none;
         color: #DDA62A;
@@ -531,11 +543,20 @@ footer {
         #hero > div div {
           width: 425px;
           height: 75px; } }
+      @media (min-width: 1400px) {
+        #hero > div div {
+          width: 680px;
+          height: 115px; } }
     #hero > div h3 {
       font-family: sofia-pro;
       color: #DDA62A;
       font-weight: 700;
       margin-top: 10px; }
+      @media (min-width: 1400px) {
+        #hero > div h3 {
+          font-size: 2.1875rem;
+          margin-top: 20px;
+          margin-left: 20px; } }
 
 /* =============
     Section 1
@@ -553,6 +574,9 @@ footer {
   @media (min-width: 992px) {
     #section1 {
       margin-left: calc(-250px + 40vw); } }
+  @media (min-width: 1400px) {
+    #section1 {
+      margin-top: calc(-20vh + 400px); } }
   @media (min-width: 768px) {
     #section1 > div {
       display: flex;
@@ -566,6 +590,9 @@ footer {
       #section1 > div .bootimg {
         margin-bottom: 0;
         margin-top: 150px; } }
+    @media (min-width: 1400px) {
+      #section1 > div .bootimg {
+        margin-top: -300px; } }
 
 /* =============
     Section 2
@@ -575,6 +602,9 @@ footer {
   @media (min-width: 768px) {
     #section2 {
       margin-top: 700px; } }
+  @media (min-width: 1400px) {
+    #section2 {
+      margin-top: 500px; } }
   @media (min-width: 768px) {
     #section2 > div article {
       margin-left: 30vw; } }
@@ -598,6 +628,10 @@ footer {
     @media (min-width: 992px) {
       #section2 > div .bootimg {
         margin-left: calc(-700px + 35vw); } }
+    @media (min-width: 1400px) {
+      #section2 > div .bootimg {
+        margin-left: calc(-900px + 35vw);
+        margin-top: -250px; } }
 
 /* =============
     Section 3
@@ -614,6 +648,9 @@ footer {
   @media (min-width: 992px) {
     #section3 {
       margin-left: calc(-250px + 40vw); } }
+  @media (min-width: 1400px) {
+    #section3 {
+      margin-top: 500px; } }
   @media (min-width: 576px) {
     #section3 > div article p {
       width: 450px; } }
@@ -629,3 +666,6 @@ footer {
     @media (min-width: 768px) {
       #section3 > div .bootimg {
         margin-bottom: 80px; } }
+    @media (min-width: 1400px) {
+      #section3 > div .bootimg {
+        margin-bottom: -200px; } }

@@ -7,6 +7,10 @@
     margin-top: 700px;
     }
 
+    @include xxl{
+        margin-top: 500px;
+    }
+
     >div{
         article{
             @include md{
@@ -33,6 +37,11 @@
             }
             @include lg{
                 margin-left: calc(-700px + 35vw);
+            }
+
+            @include xxl{
+                margin-left: calc(-900px + 35vw);
+                margin-top: -250px;
             }
         }
     }

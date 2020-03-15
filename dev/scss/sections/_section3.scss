@@ -14,6 +14,9 @@
     @include lg{
             margin-left: calc(-250px + 40vw);
     }
+    @include xxl{
+        margin-top: 500px;
+    }
     >div{
         article{
                 p{
@@ -34,6 +37,9 @@
             }
             @include md{
                 margin-bottom: 80px;
+            }
+            @include xxl{
+                margin-bottom: -200px;
             }
         }
     }

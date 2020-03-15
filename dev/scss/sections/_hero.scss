@@ -18,6 +18,10 @@
                 width:425px;
                 height:75px;
             }
+            @include xxl{
+                width:680px;
+                height:115px;
+            }
         }
 
         h3 {
@@ -25,6 +29,11 @@
             color: $gold;
             font-weight: 700;
             margin-top: 10px;
+            @include xxl{
+                font-size: rem-calc(35);
+                margin-top: 20px;
+                margin-left: 20px;
+            }
         }
     }
 }

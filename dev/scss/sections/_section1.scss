@@ -15,6 +15,10 @@
     @include lg{
             margin-left: calc(-250px + 40vw);
     }
+
+    @include xxl{
+        margin-top: calc(-20vh + 400px);
+    }
     >div{
         @include md{
             display: flex;
@@ -28,6 +32,10 @@
             @include md{
                 margin-bottom: 0;
                 margin-top: 150px;
+            }
+
+            @include xxl{
+margin-top: -300px;
             }
         }
     }

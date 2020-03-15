@@ -10,6 +10,9 @@ footer{
     @include lg{
             margin-top: 1000px;
     }
+    @include xxl{
+        margin-top: 1300px;
+    }
     div{
         display: flex;
         justify-content: center;
@@ -24,9 +27,10 @@ footer{
             border-left: 100vw solid $gold;
             padding:0 10px;
             white-space: nowrap;
+            // z-index: -2;
+            // position: static;
             @include sm{
                 font-size: rem-calc(18);
-
             }
             @include md{
                 font-size: rem-calc(20);
@@ -35,10 +39,15 @@ footer{
             @include lg{
                 font-size: rem-calc(24);
             }
+            @include xxl{
+                font-size: rem-calc(30);
+                border-left: 50vw solid $gold;
+            }
             a{
                 text-decoration: none;
                 color:$gold;
                 transition: .25s;
+                // z-index: 2;
                 &:hover{
                     border-bottom: 5px solid $gold;
                 }
