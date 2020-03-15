@@ -1,3 +1,48 @@
 /* =============
     Footer
 ============= */
+footer{
+    margin-top: 500px;
+    margin-bottom: 40px;
+    @include md{
+        margin-top: 950px;
+    }
+    @include lg{
+            margin-top: 1000px;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        @include md{
+            justify-content: flex-start;
+        }
+        h2{
+            font-family: sofia-pro;
+            font-weight: 700;
+            font-size: rem-calc(16);
+            border-right: 100vw solid $gold;
+            border-left: 100vw solid $gold;
+            padding:0 10px;
+            white-space: nowrap;
+            @include sm{
+                font-size: rem-calc(18);
+
+            }
+            @include md{
+                font-size: rem-calc(20);
+                border-left: calc(10vw - 30px) solid $gold;
+            }
+            @include lg{
+                font-size: rem-calc(24);
+            }
+            a{
+                text-decoration: none;
+                color:$gold;
+                transition: .25s;
+                &:hover{
+                    border-bottom: 5px solid $gold;
+                }
+            }
+        }
+    }
+}

@@ -326,10 +326,7 @@ body {
   position: relative; }
 
 main {
-  overflow-x: hidden; }
-  @media (min-width: 768px) {
-    main {
-      overflow-y: hidden; } }
+  overflow: hidden; }
 
 #section1,
 #section2,
@@ -356,6 +353,12 @@ main {
     #background {
       height: 5000px;
       overflow-y: hidden; } }
+  @media (min-width: 992px) {
+    #background {
+      height: 5020px; } }
+  @media (min-width: 1400px) {
+    #background {
+      height: 5600px; } }
   #background svg {
     margin-left: calc(-1280px + 30vw);
     margin-top: calc(-500px + 50vh);
@@ -416,9 +419,6 @@ p {
   @media (min-width: 768px) {
     p {
       font-size: 1.125rem; } }
-  @media (min-width: 992px) {
-    p {
-      font-size: 1.25rem; } }
 
 .bootimg {
   background-repeat: no-repeat;
@@ -472,6 +472,46 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  margin-top: 500px;
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    footer {
+      margin-top: 950px; } }
+  @media (min-width: 992px) {
+    footer {
+      margin-top: 1000px; } }
+  footer div {
+    display: flex;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      footer div {
+        justify-content: flex-start; } }
+    footer div h2 {
+      font-family: sofia-pro;
+      font-weight: 700;
+      font-size: 1rem;
+      border-right: 100vw solid #DDA62A;
+      border-left: 100vw solid #DDA62A;
+      padding: 0 10px;
+      white-space: nowrap; }
+      @media (min-width: 576px) {
+        footer div h2 {
+          font-size: 1.125rem; } }
+      @media (min-width: 768px) {
+        footer div h2 {
+          font-size: 1.25rem;
+          border-left: calc(10vw - 30px) solid #DDA62A; } }
+      @media (min-width: 992px) {
+        footer div h2 {
+          font-size: 1.5rem; } }
+      footer div h2 a {
+        text-decoration: none;
+        color: #DDA62A;
+        transition: .25s; }
+        footer div h2 a:hover {
+          border-bottom: 5px solid #DDA62A; }
+
 /* =============
     Hero
 ============= */
@@ -510,6 +550,9 @@ textarea {
   @media (min-width: 768px) {
     #section1 {
       margin-top: calc(-20vh + 360px); } }
+  @media (min-width: 992px) {
+    #section1 {
+      margin-left: calc(-250px + 40vw); } }
   @media (min-width: 768px) {
     #section1 > div {
       display: flex;
@@ -535,6 +578,9 @@ textarea {
   @media (min-width: 768px) {
     #section2 > div article {
       margin-left: 30vw; } }
+  @media (min-width: 992px) {
+    #section2 > div article {
+      margin-left: 40vw; } }
   #section2 > div article p {
     margin-left: 22vw;
     width: 173px; }
@@ -549,18 +595,25 @@ textarea {
       #section2 > div .bootimg {
         margin-left: calc(-750px + 50vw);
         display: block; } }
+    @media (min-width: 992px) {
+      #section2 > div .bootimg {
+        margin-left: calc(-700px + 35vw); } }
 
 /* =============
     Section 3
 ============= */
 #section3 {
-  margin-top: 280px; }
+  margin-top: 280px;
+  height: 472px; }
   @media (min-width: 576px) {
     #section3 {
       margin-top: 300px; } }
   @media (min-width: 768px) {
     #section3 {
       margin-top: 30px; } }
+  @media (min-width: 992px) {
+    #section3 {
+      margin-left: calc(-250px + 40vw); } }
   @media (min-width: 576px) {
     #section3 > div article p {
       width: 450px; } }

@@ -12,6 +12,9 @@
         margin-top: calc(-20vh + 360px);
         // margin-top: 200px;
     }
+    @include lg{
+            margin-left: calc(-250px + 40vw);
+    }
     >div{
         @include md{
             display: flex;

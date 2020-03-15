@@ -12,6 +12,9 @@
             @include md{
                 margin-left:30vw;
             }
+            @include lg{
+                margin-left:40vw;
+            }
             p{
                 margin-left: 22vw;
                 width:173px;
@@ -27,6 +30,9 @@
             @include md{
                 margin-left: calc(-750px + 50vw);
                 display: block;
+            }
+            @include lg{
+                margin-left: calc(-700px + 35vw);
             }
         }
     }

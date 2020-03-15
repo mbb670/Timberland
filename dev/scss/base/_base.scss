@@ -21,10 +21,7 @@ body {
 }
 
 main {
-    overflow-x: hidden;
-    @include md{
-        overflow-y: hidden;
-    }
+overflow: hidden;
 }
 
 #section1,
@@ -56,6 +53,12 @@ main {
     @include md{
         height:5000px;
         overflow-y: hidden;
+    }
+    @include lg{
+        height:5020px;
+    }
+    @include xxl{
+        height:5600px;
     }
 
     svg {
@@ -141,9 +144,6 @@ p {
     line-height: rem-calc(28);
     @include md {
         font-size: rem-calc(18);
-    }
-    @include lg {
-        font-size: rem-calc(20);
     }
 }
 
