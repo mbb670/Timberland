@@ -15,6 +15,33 @@ ul {
     }
 }
 
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+
+#background{
+    overflow-x: hidden;
+    position: absolute;
+    width: 100vw;
+    // left:1px;
+    svg{
+        // transform: scale(.2);
+        width:2360px;
+        margin-left: -1215px;
+        margin-top:-200px;
+        g{
+                .md, .lg{
+                    display: none;
+                }
+
+
+        }
+
+    }
+
+}
+
 .title {
     display: flex;
     flex-direction: row-reverse;
@@ -34,7 +61,7 @@ ul {
             height: 100%;
             content:'';
             position: absolute;
-            bottom:-100px;
+            bottom:0;
             left:0;
 
         }

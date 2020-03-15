@@ -110,6 +110,14 @@
 		"oAP": "/dev/html/section3.html",
 		"oF": 0
 		},
+	"/dev/html/svg/background.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/html/svg/background.html",
+		"oF": 0
+		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
 		"ft": 64,

@@ -321,6 +321,21 @@ ul {
   ul li {
     list-style: none; }
 
+body {
+  overflow-x: hidden;
+  position: relative; }
+
+#background {
+  overflow-x: hidden;
+  position: absolute;
+  width: 100vw; }
+  #background svg {
+    width: 2360px;
+    margin-left: -1215px;
+    margin-top: -200px; }
+    #background svg g .md, #background svg g .lg {
+      display: none; }
+
 .title {
   display: flex;
   flex-direction: row-reverse; }
@@ -340,7 +355,7 @@ ul {
       height: 100%;
       content: '';
       position: absolute;
-      bottom: -100px;
+      bottom: 0;
       left: 0; }
 
 /* =============
