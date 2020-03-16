@@ -1,5 +1,12 @@
 var rellax = new Rellax('.rellax');
 
+var bootrellax = new Rellax('.bootimg', {
+    speed: 3,
+    center: true,
+    wrapper: null,
+    vertical: true
+});
+
 var rellax0 = new Rellax('.rellax0', {
     speed: 0,
     center: false,
