@@ -1,5 +1,5 @@
-
 // @codekit-append "rellax.js";
+// @codekit-append "anamations.js";
 
 
 $( document ).ready(function() {
