@@ -389,6 +389,9 @@ main {
   flex-direction: row-reverse;
   justify-content: flex-end;
   margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .title {
+      width: 117px; } }
   .title li {
     font-family: sofia-pro, sans-serif;
     font-size: 1.25rem;
@@ -577,6 +580,9 @@ footer {
   @media (min-width: 1400px) {
     #section1 {
       margin-top: calc(-20vh + 400px); } }
+  @media (min-width: 768px) {
+    #section1 > div .title {
+      width: 1400px; } }
   @media (min-width: 768px) {
     #section1 > div {
       display: flex;

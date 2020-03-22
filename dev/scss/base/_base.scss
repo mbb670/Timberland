@@ -15,14 +15,13 @@ ul {
     }
 }
 
-
 body {
     overflow-x: hidden;
     position: relative;
 }
 
 main {
-overflow: hidden;
+    overflow: hidden;
 }
 
 #section1,
@@ -33,11 +32,12 @@ overflow: hidden;
     // margin-top: 300px;
     width: 80vw;
     // overflow-x: hidden;
-    >div{
-        article{
-            @include md{
+    > div {
+        article {
+            @include md {
                 display: flex;
-                .title{
+
+                .title {
                     margin-right: 30px;
                     margin-top: -100px;
                 }
@@ -51,16 +51,16 @@ overflow: hidden;
     position: absolute;
     width: 100vw;
     z-index: -1;
-    @include md{
-        height:5000px;
+    @include md {
+        height: 5000px;
         overflow-y: hidden;
         // height: 650vh;
     }
-    @include lg{
-        height:5020px;
+    @include lg {
+        height: 5020px;
     }
-    @include xxl{
-        height:5700px;
+    @include xxl {
+        height: 5700px;
     }
 
     svg {
@@ -112,6 +112,11 @@ overflow: hidden;
     flex-direction: row-reverse;
     justify-content: flex-end;
     margin-bottom: 20px;
+    // border: 2px solid red;
+    @include md {
+        // width: 1400px;
+        width: 117px;
+    }
 
     li {
         font-family: sofia-pro, sans-serif;
@@ -123,6 +128,7 @@ overflow: hidden;
         text-orientation: mixed;
         white-space: nowrap;
         writing-mode: vertical-rl;
+        // border: 2px solid green;
         @include md {
             font-size: rem-calc(28);
             height: 250px;
@@ -157,17 +163,17 @@ p {
     margin-bottom: -30px;
     margin-left: calc(-210px + 50vw);
     width: 400px;
-    @include sm{
+    @include sm {
         margin-left: calc(-280px + 50vw);
         height: 600px;
         width: 600px;
     }
-    @include md{
+    @include md {
         height: 820px;
         width: 820px;
         margin-left: calc(-430px + 50vw);
     }
-    @include xxl{
+    @include xxl {
         height: 1000px;
         width: 1000px;
         margin-left: calc(-500px + 50vw);
