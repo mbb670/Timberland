@@ -78,6 +78,17 @@
 		"oAP": "/deploy/index.html",
 		"oF": 0
 		},
+	"/deploy/js/CustomEase.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/deploy/js/CustomEase.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/deploy/js/DrawSVGPlugin.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -85,6 +96,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/deploy/js/DrawSVGPlugin.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/deploy/js/MorphSVGPlugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/deploy/js/MorphSVGPlugin.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

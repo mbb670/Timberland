@@ -46,3 +46,58 @@ function leavesReset(){
 
 // BIKES
 gsap.to(".wheel", {duration:2, rotate:360, transformOrigin:"center", repeat:-1, ease:"linear"});
+
+
+// KITES
+
+stringTl = gsap.timeline({repeat:-1});
+kiteTl = gsap.timeline({repeat:-1});
+stringTl2 = gsap.timeline({repeat:-1});
+kiteTl2 = gsap.timeline({repeat:-1});
+var kiteDuration = .8;
+var kiteEase = "none";
+
+gsap.set([".top-2", ".top-3",".top-4", ".top-5",".top-6",".top-7",".top-8",".top-9",".top-21",".top-22",".top-23",".top-24",".string-2", ".string-3", ".string-4", ".string-5", ".string-6", ".string-7", ".string-8", ".string-9",".string-21",".string-22",".string-23",".string-24"], {visibility:"hidden"});
+
+stringTl
+
+.to(".string-1", {duration: kiteDuration, morphSVG:".string-2", ease:kiteEase})
+.to(".string-1", {duration: kiteDuration, morphSVG:".string-3", ease:kiteEase})
+.to(".string-1", {duration: kiteDuration, morphSVG:".string-4", ease:kiteEase})
+.to(".string-1", {duration: kiteDuration, morphSVG:".string-5", ease:kiteEase})
+.to(".string-1", {duration: kiteDuration, morphSVG:".string-6", ease:kiteEase})
+.to(".string-1", {duration: kiteDuration, morphSVG:".string-7", ease:kiteEase})
+.to(".string-1", {duration: kiteDuration, morphSVG:".string-8", ease:kiteEase})
+.to(".string-1", {duration: kiteDuration, morphSVG:".string-9", ease:kiteEase})
+
+;
+
+kiteTl
+.to(".top-1", {duration: kiteDuration, morphSVG:".top-2", ease:kiteEase})
+.to(".top-1", {duration: kiteDuration, morphSVG:".top-3", ease:kiteEase})
+.to(".top-1", {duration: kiteDuration, morphSVG:".top-4", ease:kiteEase})
+.to(".top-1", {duration: kiteDuration, morphSVG:".top-5", ease:kiteEase})
+.to(".top-1", {duration: kiteDuration, morphSVG:".top-6", ease:kiteEase})
+.to(".top-1", {duration: kiteDuration, morphSVG:".top-7", ease:kiteEase})
+.to(".top-1", {duration: kiteDuration, morphSVG:".top-8", ease:kiteEase})
+.to(".top-1", {duration: kiteDuration, morphSVG:".top-9", ease:kiteEase})
+;
+
+stringTl2
+
+.to(".string-20", {duration: kiteDuration, morphSVG:".string-21", ease:kiteEase})
+.to(".string-20", {duration: kiteDuration, morphSVG:".string-22", ease:kiteEase})
+.to(".string-20", {duration: kiteDuration, morphSVG:".string-23", ease:kiteEase})
+.to(".string-20", {duration: kiteDuration, morphSVG:".string-24", ease:kiteEase})
+.to(".string-20", {duration: kiteDuration, morphSVG:".string-20", ease:kiteEase})
+
+
+;
+
+kiteTl2
+.to(".top-20", {duration: kiteDuration, morphSVG:".top-21", ease:kiteEase})
+.to(".top-20", {duration: kiteDuration, morphSVG:".top-22", ease:kiteEase})
+.to(".top-20", {duration: kiteDuration, morphSVG:".top-23", ease:kiteEase})
+.to(".top-20", {duration: kiteDuration, morphSVG:".top-24", ease:kiteEase})
+.to(".top-20", {duration: kiteDuration, morphSVG:".top-20", ease:kiteEase})
+;
