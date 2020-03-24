@@ -2,27 +2,36 @@
     Section 1
 ============= */
 #section1 {
-    margin-top: calc(-50vh + 330px);
     height: 584px;
+    margin-top: calc(-50vh + 330px);
     @include sm {
-        width: 400px;
         margin-left: 10vw;
     }
     @include md {
-        margin-top: calc(-20vh + 360px);
-        // margin-top: 200px;
+        margin-top: calc(-20vh + 420px);
     }
     @include lg {
         margin-left: calc(-250px + 40vw);
     }
     @include xxl {
-        margin-top: calc(-20vh + 400px);
+        margin-top: calc(-20vh + 480px);
     }
 
     > div {
+        > article {
+            p {
+                @include sm {
+                    width: 400px;
+                }
+                @include md {
+                    width: 450px;
+                }
+            }
+        }
+
         .title {
             @include md {
-                width: 1400px;
+                // width: 1400px;
             }
         }
         @include md {

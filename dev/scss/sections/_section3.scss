@@ -1,44 +1,58 @@
 /* =============
     Section 3
 ============= */
-#section3{
-    margin-top: 280px;
+#section3 {
     height: 472px;
-    // height:580px;
-    @include sm{
-    margin-top: 300px;
+    margin-top: 280px;
+    @include sm {
+        margin-top: 300px;
     }
-    @include md{
+    @include md {
         margin-top: 30px;
     }
-    @include lg{
-            margin-left: calc(-250px + 40vw);
+    @include lg {
+        margin-left: calc(-250px + 40vw);
     }
-    @include xxl{
+    @include xxl {
         margin-top: 500px;
     }
-    >div{
-        article{
-                p{
-                    @include sm{
-                        width: 450px;
-                    }
-                    @include md{
 
-                            width: 200px;
-                    }
-                }
-            }
-        .bootimg{
-            background-image: url('../img/universal/boot3.png');
-            margin-bottom: -130px;
-            @include sm{
-            margin-bottom: -320px;
-            }
+    > div {
+        article {
             @include md{
-                margin-bottom: 80px;
+                margin-top: 100px;
+            }
+            @include lg{
+                margin-top: 180px;
             }
             @include xxl{
+                margin-top: -180px;
+                margin-left: -150px;
+            }
+            p {
+                @include sm {
+                    width: 400px;
+                }
+                @include md {
+                    width: 250px;
+                }
+                @include xxl{
+                    width: 400px;
+                    margin-top: 80px;
+                }
+            }
+        }
+
+        .bootimg {
+            background-image: url("../img/universal/boot3.png");
+            margin-bottom: -130px;
+            @include sm {
+                margin-bottom: -320px;
+            }
+            @include md {
+                margin-bottom: 80px;
+            }
+            @include xxl {
                 margin-bottom: -200px;
             }
         }

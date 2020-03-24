@@ -28,10 +28,8 @@ main {
 #section2,
 #section3 {
     margin: 0 auto;
-    // display: none;
-    // margin-top: 300px;
     width: 80vw;
-    // overflow-x: hidden;
+
     > div {
         article {
             @include md {
@@ -112,9 +110,7 @@ main {
     flex-direction: row-reverse;
     justify-content: flex-end;
     margin-bottom: 20px;
-    // border: 2px solid red;
     @include md {
-        // width: 1400px;
         width: 117px;
     }
 
@@ -128,10 +124,13 @@ main {
         text-orientation: mixed;
         white-space: nowrap;
         writing-mode: vertical-rl;
-        // border: 2px solid green;
         @include md {
             font-size: rem-calc(28);
             height: 250px;
+        }
+        @include lg{
+            transform: scale(1.2);
+            margin-right: 5px;
         }
 
         &::after {
@@ -141,6 +140,10 @@ main {
             height: 100%;
             margin-top: 5px;
             width: 20px;
+            margin-right: 2px;
+            @include sm{
+                margin-right: 5px;
+            }
         }
     }
 }
@@ -157,25 +160,24 @@ p {
 
 .bootimg {
     background-repeat: no-repeat;
-    // position: absolute;
     background-size: contain;
     height: 400px;
     margin-bottom: -30px;
     margin-left: calc(-210px + 50vw);
     width: 400px;
     @include sm {
-        margin-left: calc(-280px + 50vw);
         height: 600px;
+        margin-left: calc(-280px + 50vw);
         width: 600px;
     }
     @include md {
         height: 820px;
-        width: 820px;
         margin-left: calc(-430px + 50vw);
+        width: 820px;
     }
     @include xxl {
         height: 1000px;
-        width: 1000px;
         margin-left: calc(-500px + 50vw);
+        width: 1000px;
     }
 }

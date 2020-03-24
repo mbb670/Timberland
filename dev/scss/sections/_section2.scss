@@ -14,18 +14,28 @@
     >div{
         article{
             @include md{
-                margin-left:30vw;
+                margin-left:20vw;
             }
             @include lg{
+                margin-left:25vw;
+            }
+            @include xl{
+                margin-left:33vw;
+            }
+            @include xxl{
                 margin-left:40vw;
             }
             p{
                 margin-left: 22vw;
                 width:173px;
                 @include md{
-                    width:230px;
+                    width:250px;
                     margin-left:0;
                 }
+                @include lg{
+                    width:320px;
+                }
+
             }
         }
         .bootimg{

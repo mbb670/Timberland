@@ -406,13 +406,21 @@ main {
       .title li {
         font-size: 1.75rem;
         height: 250px; } }
+    @media (min-width: 992px) {
+      .title li {
+        transform: scale(1.2);
+        margin-right: 5px; } }
     .title li::after {
       background-color: #DDA62A;
       content: '';
       display: inline-block;
       height: 100%;
       margin-top: 5px;
-      width: 20px; }
+      width: 20px;
+      margin-right: 2px; }
+      @media (min-width: 576px) {
+        .title li::after {
+          margin-right: 5px; } }
 
 p {
   font-family: sofia-pro, sans-serif;
@@ -432,19 +440,19 @@ p {
   width: 400px; }
   @media (min-width: 576px) {
     .bootimg {
-      margin-left: calc(-280px + 50vw);
       height: 600px;
+      margin-left: calc(-280px + 50vw);
       width: 600px; } }
   @media (min-width: 768px) {
     .bootimg {
       height: 820px;
-      width: 820px;
-      margin-left: calc(-430px + 50vw); } }
+      margin-left: calc(-430px + 50vw);
+      width: 820px; } }
   @media (min-width: 1400px) {
     .bootimg {
       height: 1000px;
-      width: 1000px;
-      margin-left: calc(-500px + 50vw); } }
+      margin-left: calc(-500px + 50vw);
+      width: 1000px; } }
 
 /* =============
     Typography
@@ -565,24 +573,26 @@ footer {
     Section 1
 ============= */
 #section1 {
-  margin-top: calc(-50vh + 330px);
-  height: 584px; }
+  height: 584px;
+  margin-top: calc(-50vh + 330px); }
   @media (min-width: 576px) {
     #section1 {
-      width: 400px;
       margin-left: 10vw; } }
   @media (min-width: 768px) {
     #section1 {
-      margin-top: calc(-20vh + 360px); } }
+      margin-top: calc(-20vh + 420px); } }
   @media (min-width: 992px) {
     #section1 {
       margin-left: calc(-250px + 40vw); } }
   @media (min-width: 1400px) {
     #section1 {
-      margin-top: calc(-20vh + 400px); } }
+      margin-top: calc(-20vh + 480px); } }
+  @media (min-width: 576px) {
+    #section1 > div > article p {
+      width: 400px; } }
   @media (min-width: 768px) {
-    #section1 > div .title {
-      width: 1400px; } }
+    #section1 > div > article p {
+      width: 450px; } }
   @media (min-width: 768px) {
     #section1 > div {
       display: flex;
@@ -613,8 +623,14 @@ footer {
       margin-top: 500px; } }
   @media (min-width: 768px) {
     #section2 > div article {
-      margin-left: 30vw; } }
+      margin-left: 20vw; } }
   @media (min-width: 992px) {
+    #section2 > div article {
+      margin-left: 25vw; } }
+  @media (min-width: 1200px) {
+    #section2 > div article {
+      margin-left: 33vw; } }
+  @media (min-width: 1400px) {
     #section2 > div article {
       margin-left: 40vw; } }
   #section2 > div article p {
@@ -622,8 +638,11 @@ footer {
     width: 173px; }
     @media (min-width: 768px) {
       #section2 > div article p {
-        width: 230px;
+        width: 250px;
         margin-left: 0; } }
+    @media (min-width: 992px) {
+      #section2 > div article p {
+        width: 320px; } }
   #section2 > div .bootimg {
     background-image: url("../img/universal/boot2.png");
     display: none; }
@@ -643,8 +662,8 @@ footer {
     Section 3
 ============= */
 #section3 {
-  margin-top: 280px;
-  height: 472px; }
+  height: 472px;
+  margin-top: 280px; }
   @media (min-width: 576px) {
     #section3 {
       margin-top: 300px; } }
@@ -657,12 +676,26 @@ footer {
   @media (min-width: 1400px) {
     #section3 {
       margin-top: 500px; } }
+  @media (min-width: 768px) {
+    #section3 > div article {
+      margin-top: 100px; } }
+  @media (min-width: 992px) {
+    #section3 > div article {
+      margin-top: 180px; } }
+  @media (min-width: 1400px) {
+    #section3 > div article {
+      margin-top: -180px;
+      margin-left: -150px; } }
   @media (min-width: 576px) {
     #section3 > div article p {
-      width: 450px; } }
+      width: 400px; } }
   @media (min-width: 768px) {
     #section3 > div article p {
-      width: 200px; } }
+      width: 250px; } }
+  @media (min-width: 1400px) {
+    #section3 > div article p {
+      width: 400px;
+      margin-top: 80px; } }
   #section3 > div .bootimg {
     background-image: url("../img/universal/boot3.png");
     margin-bottom: -130px; }
