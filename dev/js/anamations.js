@@ -165,11 +165,6 @@ stringSM2
 
 
 
-
-
-
-
-
 kiteMD1
 .to(".top-12", {duration: kiteDuration, morphSVG:".top-13", ease:kiteEase})
 .to(".top-12", {duration: kiteDuration, morphSVG:".top-14", ease:kiteEase})
@@ -203,13 +198,6 @@ stringMD2
 .to(".string-17", {duration: kiteDuration, morphSVG:".string-22", ease:kiteEase})
 .to(".string-17", {duration: kiteDuration, morphSVG:".string-17", ease:kiteEase})
 ;
-
-
-
-
-
-
-
 
 
 
