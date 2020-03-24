@@ -65,79 +65,67 @@ stringXL1 = gsap.timeline({repeat:-1});
 kiteXL2 = gsap.timeline({repeat:-1});
 stringXL2 = gsap.timeline({repeat:-1});
 
-var kiteDuration = .8;
+var kiteDuration = 1;
 var kiteEase = "none";
 
 gsap.set([
-    // ".top-1",
     ".top-2",
     ".top-3",
     ".top-4",
     ".top-5",
-    // ".top-6",
     ".top-7",
     ".top-8",
     ".top-9",
     ".top-10",
     ".top-11",
-    // ".top-12",
     ".top-13",
     ".top-14",
     ".top-15",
     ".top-16",
-    // ".top-17",
     ".top-18",
     ".top-19",
     ".top-20",
     ".top-21",
     ".top-22",
-    // ".top-23",
     ".top-24",
     ".top-25",
     ".top-26",
     ".top-27",
-    // ".top-28",
     ".top-29",
     ".top-30",
     ".top-31",
     ".top-32",
-    ".top-33",
-
-
-    // ".string-1",
+    ".top-33"
+    ,
+//
     ".string-2",
     ".string-3",
     ".string-4",
     ".string-5",
-    // ".string-6",
     ".string-7",
     ".string-8",
     ".string-9",
     ".string-10",
     ".string-11",
-    // ".string-12",
     ".string-13",
     ".string-14",
     ".string-15",
     ".string-16",
-    // ".string-17",
     ".string-18",
     ".string-19",
     ".string-20",
     ".string-21",
     ".string-22",
-    // ".string-23",
     ".string-24",
     ".string-25",
     ".string-26",
     ".string-27",
-    // ".string-28",
     ".string-29",
     ".string-30",
     ".string-31",
     ".string-32",
     ".string-33"
-], {visibility:"hidden"});
+], {display:"none"});
 
 
 
@@ -148,7 +136,7 @@ kiteSM1
 .to(".top-1", {duration: kiteDuration, morphSVG:".top-5", ease:kiteEase})
 .to(".top-1", {duration: kiteDuration, morphSVG:".top-1", ease:kiteEase})
 ;
-
+//
 stringSM1
 .to(".string-1", {duration: kiteDuration, morphSVG:".string-2", ease:kiteEase})
 .to(".string-1", {duration: kiteDuration, morphSVG:".string-3", ease:kiteEase})
