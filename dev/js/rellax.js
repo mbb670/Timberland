@@ -1,3 +1,4 @@
+// RELLAX
 var rellax = new Rellax('.rellax');
 
 var bootrellax = new Rellax('.bootimg', {
