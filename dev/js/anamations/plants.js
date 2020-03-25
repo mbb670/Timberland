@@ -8,7 +8,7 @@ var leaves5 = [".path_43", ".path_44", ".path_45", ".path_46"];
 
 gsap.set(leavesArray, {alpha:0});
 
-plantTl = gsap.timeline({repeat:-1, repeatDelay:4});
+plantTl = gsap.timeline({repeat:-1, repeatDelay:3});
 
 plantTl
 .fromTo(".path_19", {drawSVG:"0%"}, {drawSVG:"100%", duration:5, onStart:leavesReset, onComplete:leavesGroup5})
@@ -17,6 +17,19 @@ plantTl
 .fromTo(".path_21", {drawSVG:"100% 100%"}, {drawSVG:"100% 0%", duration:1, onComplete:leavesGroup1}, "-=3")
 .fromTo(".path_22", {drawSVG:"100% 100%"}, {drawSVG:"100% 0%", duration:2, onComplete:leavesGroup3}, "-=2.8")
 .fromTo(".path_23", {drawSVG:"100% 100%"}, {drawSVG:"100% 0%", duration:2, onComplete:leavesGroup4}, "-=2")
+.to(leaves1, {alpha:1, duration:5})
+.to(leaves1, {y:150, x:50, alpha:0, duration:8, delay:4, stagger:.2}, "a")
+.to(leaves2, {y:180, x:30, alpha:0, duration:7, delay:3, stagger:.3}, "a")
+.to(leaves3, {y:100, x:70, alpha:0, duration:4, delay:1, stagger:.1}, "a")
+.to(leaves4, {y:190, x:-10, alpha:0, duration:5, delay:.8, stagger:.3}, "a")
+.to(leaves5, {y:200, x:90, alpha:0, duration:9, delay:.2, stagger:.4}, "a")
+.to(".path_23", {morphSVG:".path_22", drawSVG:"100% 100%", duration:1})
+.to(".path_22", {morphSVG:".path_21", drawSVG:"100% 100%", duration:1}, "-=.7")
+.to(".path_21", {morphSVG:".path_20", drawSVG:"100% 100%", duration:1}, "-=.7")
+.to(".path_20", {morphSVG:".path_24", drawSVG:"100% 100%", duration:1}, "-=.7")
+.to(".path_24", {drawSVG:"100% 100%", duration:1}, "-=.7")
+.to(".path_19", {drawSVG:"0%", duration:1}, "-=.7")
+
 ;
 
 function leavesGroup1(){
@@ -40,5 +53,5 @@ function leavesGroup5(){
 }
 
 function leavesReset(){
-  gsap.set(leavesArray, {alpha:0})
+  gsap.set(leavesArray, {alpha:0, x:0, y:0})
 }

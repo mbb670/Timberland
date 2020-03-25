@@ -1,6 +1,6 @@
 // LINES
 
-var randDuration = gsap.utils.random([3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],true);
+var randDuration = gsap.utils.random([7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],true);
 var randDest = gsap.utils.random([
     "0% 0%",
     "0% 10%",
@@ -27,114 +27,19 @@ var randDest = gsap.utils.random([
 var allLines = [".g1", ".g2", ".g3", ".g4", ".g5", ".g6", ".g7", ".g8", ".g9", ".g10", ".g11", ".g12", ".g13", ".g14"];
 var linesEase = "back.inOut(1.5)";
 
-
-
 gsap.set(allLines, {drawSVG:"0% 0%"})
 
-var group1 = [".g1", ".g8"];
-var group2 = [".g2", ".g9"];
-var group3 = [".g3", ".g10"];
-var group4 = [".g4", ".g11"];
-var group5 = [".g5", ".g12"];
-var group6 = [".g6", ".g13"];
-var group7 = [".g7", ".g14"];
-
-
-var g1 = gsap.timeline({repeat:-1});
-var g2 = gsap.timeline({repeat:-1});
-var g3 = gsap.timeline({repeat:-1});
-var g4 = gsap.timeline({repeat:-1});
-var g5 = gsap.timeline({repeat:-1});
-var g6 = gsap.timeline({repeat:-1});
-var g7 = gsap.timeline({repeat:-1});
-
-g1
-.to(group1, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group1, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group1, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group1, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group1, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group1, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group1, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group1, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group1, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group1, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-;
-
-g2
-.to(group2, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group2, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group2, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group2, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group2, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group2, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group2, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group2, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group2, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group2, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-;
-
-g3
-.to(group3, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group3, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group3, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group3, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group3, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group3, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group3, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group3, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group3, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group3, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-;
-
-g4
-.to(group4, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group4, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group4, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group4, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group4, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group4, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group4, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group4, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group4, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group4, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-;
-
-g5
-.to(group5, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group5, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group5, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group5, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group5, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group5, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group5, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group5, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group5, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group5, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-;
-
-g6
-.to(group6, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group6, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group6, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group6, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group6, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group6, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group6, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group6, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group6, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group6, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-;
-
-g7
-.to(group7, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group7, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group7, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group7, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group7, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group7, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group7, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group7, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group7, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-.to(group7, {drawSVG:randDest, duration:randDuration, ease:linesEase})
-;
+gsap.to(".g1", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});
+gsap.to(".g2", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});
+gsap.to(".g3", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});
+gsap.to(".g4", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});
+gsap.to(".g5", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});
+gsap.to(".g6", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});
+gsap.to(".g7", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});
+gsap.to(".g8", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});
+gsap.to(".g9", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});
+gsap.to(".g10", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});
+gsap.to(".g11", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});
+gsap.to(".g12", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});
+gsap.to(".g13", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});
+gsap.to(".g14", {drawSVG:randDest, duration:randDuration, ease:linesEase, repeat:-1, repeatRefresh:true});

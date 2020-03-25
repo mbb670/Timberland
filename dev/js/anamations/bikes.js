@@ -23,7 +23,9 @@ gsap.to(".back-bikeSM", {
 
     duration: bikesDuration,
     repeat: -1,
+    repeatRefresh:true,
     ease: bikesEase
+
 });
 
 gsap.to(".front-bikeSM", {
@@ -38,6 +40,7 @@ gsap.to(".front-bikeSM", {
 
     duration: bikesDuration,
     repeat: -1,
+    repeatRefresh:true,
     ease: bikesEase
 });
 
@@ -54,6 +57,7 @@ gsap.to(".back-bikeMD", {
 
     duration: bikesDuration,
     repeat: -1,
+    repeatRefresh:true,
     ease: bikesEase
 });
 
@@ -69,6 +73,7 @@ gsap.to(".front-bikeMD", {
 
     duration: bikesDuration,
     repeat: -1,
+    repeatRefresh:true,
     ease: bikesEase
 });
 
@@ -84,6 +89,7 @@ gsap.to(".back-bikeLG", {
 
     duration: bikesDuration,
     repeat: -1,
+    repeatRefresh:true,
     ease: bikesEase
 });
 
@@ -99,5 +105,6 @@ gsap.to(".front-bikeLG", {
 
     duration: bikesDuration,
     repeat: -1,
+    repeatRefresh:true,
     ease: bikesEase
 });
