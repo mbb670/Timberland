@@ -408,16 +408,16 @@ main {
         height: 250px; } }
     @media (min-width: 992px) {
       .title li {
-        transform: scale(1.2);
-        margin-right: 5px; } }
+        margin-right: 5px;
+        transform: scale(1.2); } }
     .title li::after {
       background-color: #DDA62A;
       content: '';
       display: inline-block;
       height: 100%;
+      margin-right: 2px;
       margin-top: 5px;
-      width: 20px;
-      margin-right: 2px; }
+      width: 20px; }
       @media (min-width: 576px) {
         .title li::after {
           margin-right: 5px; } }
@@ -486,23 +486,31 @@ textarea {
     Header
 ============= */
 header {
+  left: 3vw;
   position: fixed;
   top: 5vh;
-  left: 3vw;
   z-index: 100; }
   @media (min-width: 576px) {
     header {
       left: 5vw; } }
+  @media (min-width: 576px) {
+    header #noSM {
+      display: none; } }
+  header #MDPlus {
+    display: none; }
+    @media (min-width: 576px) {
+      header #MDPlus {
+        display: block; } }
   header div a {
-    text-orientation: mixed;
-    white-space: nowrap;
-    writing-mode: vertical-rl;
-    overflow: hidden;
+    color: #DDA62A;
     font-family: sofia-pro, sans-serif;
     font-size: 0.875rem;
     font-weight: 700;
-    color: #DDA62A;
-    text-decoration: none; }
+    overflow: hidden;
+    text-decoration: none;
+    text-orientation: mixed;
+    white-space: nowrap;
+    writing-mode: vertical-rl; }
     @media (min-width: 576px) {
       header div a {
         font-size: 1rem; } }
@@ -513,12 +521,12 @@ header {
       background-color: #DDA62A;
       content: '';
       display: inline-block;
-      height: 0vh;
-      margin-top: 5px;
-      width: 10px;
+      height: 0;
       margin-right: 2px;
-      transition: .5s;
-      position: absolute; }
+      margin-top: 5px;
+      position: absolute;
+      transition: 0.5s;
+      width: 10px; }
       @media (min-width: 576px) {
         header div a::after, header div a::before {
           width: 12px; } }
@@ -531,7 +539,7 @@ header {
     header div a::before {
       top: calc(-100vh - 15px);
       transform-origin: top; }
-    header div a:hover::after, header div a:active::after, header div a:focus::after, header div a:hover::before, header div a:active::before, header div a:focus::before {
+    header div a:active::after, header div a:active::before, header div a:focus::after, header div a:focus::before, header div a:hover::after, header div a:hover::before {
       height: 100vh; }
 
 /* =============

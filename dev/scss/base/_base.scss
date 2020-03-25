@@ -128,20 +128,20 @@ main {
             font-size: rem-calc(28);
             height: 250px;
         }
-        @include lg{
-            transform: scale(1.2);
+        @include lg {
             margin-right: 5px;
+            transform: scale(1.2);
         }
 
-        &::after{
+        &::after {
             background-color: $gold;
             content: '';
             display: inline-block;
             height: 100%;
+            margin-right: 2px;
             margin-top: 5px;
             width: 20px;
-            margin-right: 2px;
-            @include sm{
+            @include sm {
                 margin-right: 5px;
             }
         }

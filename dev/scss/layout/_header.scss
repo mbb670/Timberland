@@ -1,60 +1,83 @@
 /* =============
     Header
 ============= */
-header{
+header {
+    left: 3vw;
     position: fixed;
-        top:5vh;
-        left: 3vw;
-        z-index: 100;
-        @include sm{
-            left: 5vw;
+    top: 5vh;
+    z-index: 100;
+    @include sm {
+        left: 5vw;
+    }
+
+    #noSM {
+        @include sm {
+            display: none;
         }
-    div{
-        a{
-            text-orientation: mixed;
-            white-space: nowrap;
-            writing-mode: vertical-rl;
-            overflow: hidden;
+    }
+
+    #MDPlus {
+        display: none;
+        @include sm {
+            display: block;
+        }
+    }
+
+    div {
+        a {
+            color: $gold;
             font-family: sofia-pro, sans-serif;
             font-size: rem-calc(14);
             font-weight: 700;
-            color: $gold;
+            overflow: hidden;
             text-decoration: none;
-            @include sm{
+            text-orientation: mixed;
+            white-space: nowrap;
+            writing-mode: vertical-rl;
+            @include sm {
                 font-size: rem-calc(16);
             }
-            @include lg{
+            @include lg {
                 font-size: rem-calc(18);
             }
-            &::after, &::before  {
+
+            &::after,
+            &::before {
                 background-color: $gold;
                 content: '';
                 display: inline-block;
-                height: 0vh;
-                margin-top: 5px;
-                width: 10px;
+                height: 0;
                 margin-right: 2px;
-                transition: .5s;
+                margin-top: 5px;
                 position: absolute;
+                transition: 0.5s;
+                width: 10px;
                 // left:-20vw;
-                @include sm{
+                @include sm {
                     width: 12px;
                 }
-                @include lg{
+                @include lg {
                     width: 15px;
                     // width:150vw;
                 }
             }
-            &::after{
-                bottom:calc(-100vh - 5px);
+
+            &::after {
+                bottom: calc(-100vh - 5px);
                 transform-origin: right;
             }
 
-            &::before{
-                top:calc(-100vh - 15px);
+            &::before {
+                top: calc(-100vh - 15px);
                 transform-origin: top;
             }
-            &:hover::after, &:active::after, &:focus::after, &:hover::before, &:active::before, &:focus::before{
+
+            &:active::after,
+            &:active::before,
+            &:focus::after,
+            &:focus::before,
+            &:hover::after,
+            &:hover::before {
                 height: 100vh;
             }
         }
