@@ -485,6 +485,55 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  position: fixed;
+  top: 5vh;
+  left: 3vw;
+  z-index: 100; }
+  @media (min-width: 576px) {
+    header {
+      left: 5vw; } }
+  header div a {
+    text-orientation: mixed;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    overflow: hidden;
+    font-family: sofia-pro, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #DDA62A;
+    text-decoration: none; }
+    @media (min-width: 576px) {
+      header div a {
+        font-size: 1rem; } }
+    @media (min-width: 992px) {
+      header div a {
+        font-size: 1.125rem; } }
+    header div a::after, header div a::before {
+      background-color: #DDA62A;
+      content: '';
+      display: inline-block;
+      height: 0vh;
+      margin-top: 5px;
+      width: 10px;
+      margin-right: 2px;
+      transition: .5s;
+      position: absolute; }
+      @media (min-width: 576px) {
+        header div a::after, header div a::before {
+          width: 12px; } }
+      @media (min-width: 992px) {
+        header div a::after, header div a::before {
+          width: 15px; } }
+    header div a::after {
+      bottom: calc(-100vh - 5px);
+      transform-origin: right; }
+    header div a::before {
+      top: calc(-100vh - 15px);
+      transform-origin: top; }
+    header div a:hover::after, header div a:active::after, header div a:focus::after, header div a:hover::before, header div a:active::before, header div a:focus::before {
+      height: 100vh; }
+
 /* =============
     Footer
 ============= */
@@ -562,11 +611,13 @@ footer {
       font-family: sofia-pro;
       color: #DDA62A;
       font-weight: 700;
-      margin-top: 10px; }
+      margin-left: 5px; }
+      @media (min-width: 768px) {
+        #hero > div h3 {
+          font-size: 1.375rem; } }
       @media (min-width: 1400px) {
         #hero > div h3 {
           font-size: 2.1875rem;
-          margin-top: 20px;
           margin-left: 20px; } }
 
 /* =============

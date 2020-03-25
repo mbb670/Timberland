@@ -1,3 +1,62 @@
 /* =============
     Header
 ============= */
+header{
+    position: fixed;
+        top:5vh;
+        left: 3vw;
+        z-index: 100;
+        @include sm{
+            left: 5vw;
+        }
+    div{
+        a{
+            text-orientation: mixed;
+            white-space: nowrap;
+            writing-mode: vertical-rl;
+            overflow: hidden;
+            font-family: sofia-pro, sans-serif;
+            font-size: rem-calc(14);
+            font-weight: 700;
+            color: $gold;
+            text-decoration: none;
+            @include sm{
+                font-size: rem-calc(16);
+            }
+            @include lg{
+                font-size: rem-calc(18);
+            }
+            &::after, &::before  {
+                background-color: $gold;
+                content: '';
+                display: inline-block;
+                height: 0vh;
+                margin-top: 5px;
+                width: 10px;
+                margin-right: 2px;
+                transition: .5s;
+                position: absolute;
+                // left:-20vw;
+                @include sm{
+                    width: 12px;
+                }
+                @include lg{
+                    width: 15px;
+                    // width:150vw;
+                }
+            }
+            &::after{
+                bottom:calc(-100vh - 5px);
+                transform-origin: right;
+            }
+
+            &::before{
+                top:calc(-100vh - 15px);
+                transform-origin: top;
+            }
+            &:hover::after, &:active::after, &:focus::after, &:hover::before, &:active::before, &:focus::before{
+                height: 100vh;
+            }
+        }
+    }
+}

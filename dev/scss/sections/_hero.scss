@@ -12,7 +12,6 @@
             background-size: contain;
             width: 250px;
             height: 45px;
-            // border:2px solid red;
             display: block;
             @include md{
                 width:425px;
@@ -28,10 +27,14 @@
             font-family: sofia-pro;
             color: $gold;
             font-weight: 700;
-            margin-top: 10px;
+            // margin-top: 10px;
+            margin-left: 5px;
+            @include md{
+                font-size: rem-calc(22);
+            }
             @include xxl{
                 font-size: rem-calc(35);
-                margin-top: 20px;
+                // margin-top: 20px;
                 margin-left: 20px;
             }
         }
