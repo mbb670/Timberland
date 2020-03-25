@@ -19,16 +19,17 @@
 
     > div {
         article {
-            @include md{
+            @include md {
                 margin-top: 100px;
             }
-            @include lg{
+            @include lg {
                 margin-top: 180px;
             }
-            @include xxl{
+            @include xxl {
                 margin-top: -180px;
                 margin-left: -150px;
             }
+
             p {
                 @include sm {
                     width: 400px;
@@ -36,7 +37,7 @@
                 @include md {
                     width: 250px;
                 }
-                @include xxl{
+                @include xxl {
                     width: 400px;
                     margin-top: 80px;
                 }

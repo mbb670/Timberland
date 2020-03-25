@@ -1,55 +1,54 @@
 /* =============
     Section 2
 ============= */
-#section2{
+#section2 {
     margin-top: 550px;
-    @include md{
-    margin-top: 700px;
+    @include md {
+        margin-top: 700px;
     }
-
-    @include xxl{
+    @include xxl {
         margin-top: 500px;
     }
 
-    >div{
-        article{
-            @include md{
-                margin-left:20vw;
+    > div {
+        article {
+            @include md {
+                margin-left: 20vw;
             }
-            @include lg{
-                margin-left:25vw;
+            @include lg {
+                margin-left: 25vw;
             }
-            @include xl{
-                margin-left:33vw;
+            @include xl {
+                margin-left: 33vw;
             }
-            @include xxl{
-                margin-left:40vw;
+            @include xxl {
+                margin-left: 40vw;
             }
-            p{
-                margin-left: 22vw;
-                width:173px;
-                @include md{
-                    width:250px;
-                    margin-left:0;
-                }
-                @include lg{
-                    width:320px;
-                }
 
+            p {
+                margin-left: 22vw;
+                width: 173px;
+                @include md {
+                    width: 250px;
+                    margin-left: 0;
+                }
+                @include lg {
+                    width: 320px;
+                }
             }
         }
-        .bootimg{
-            background-image: url('../img/universal/boot2.png');
+
+        .bootimg {
+            background-image: url("../img/universal/boot2.png");
             display: none;
-            @include md{
+            @include md {
                 margin-left: calc(-750px + 50vw);
                 display: block;
             }
-            @include lg{
+            @include lg {
                 margin-left: calc(-700px + 35vw);
             }
-
-            @include xxl{
+            @include xxl {
                 margin-left: calc(-900px + 35vw);
                 margin-top: -250px;
             }

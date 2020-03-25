@@ -1,54 +1,79 @@
 /* =============
     Footer
 ============= */
-footer{
-    margin-top: 500px;
+footer {
     margin-bottom: 40px;
-    @include md{
+    margin-top: 500px;
+    @include md {
         margin-top: 950px;
     }
-    @include lg{
-            margin-top: 1000px;
+    @include lg {
+        margin-top: 1000px;
     }
-    @include xxl{
+    @include xxl {
         margin-top: 1300px;
     }
-    div{
+
+    div {
         display: flex;
         justify-content: center;
-        @include md{
+        @include md {
             justify-content: flex-start;
         }
-        h2{
+
+        h2 {
             font-family: sofia-pro;
-            font-weight: 700;
             font-size: rem-calc(16);
-            border-right: 100vw solid $gold;
-            border-left: 100vw solid $gold;
-            padding:0 10px;
+            font-weight: 700;
+            padding: 0 10px;
+            position: relative;
             white-space: nowrap;
-            // z-index: -2;
-            // position: static;
-            @include sm{
+            @include sm {
                 font-size: rem-calc(18);
             }
-            @include md{
+            @include md {
                 font-size: rem-calc(20);
-                border-left: calc(10vw - 30px) solid $gold;
+                margin-left: calc(10vw - 30px);
             }
-            @include lg{
+            @include lg {
                 font-size: rem-calc(24);
             }
-            @include xxl{
+            @include xxl {
                 font-size: rem-calc(30);
-                border-left: 50vw solid $gold;
+                margin-left: 50vw;
             }
-            a{
+
+            &::after,
+            &::before {
+                background-color: $gold;
+                content: '';
+                display: block;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                width: 100vw;
+                z-index: -2;
+                @include xxl {
+                    bottom: 5px;
+                    height: 15px;
+                    top: auto;
+                }
+            }
+
+            &::before {
+                left: -100vw;
+            }
+
+            &::after {
+                right: -100vw;
+            }
+
+            a {
+                color: $gold;
                 text-decoration: none;
-                color:$gold;
-                transition: .25s;
-                // z-index: 2;
-                &:hover{
+                transition: 0.25s;
+
+                &:hover {
                     border-bottom: 5px solid $gold;
                 }
             }

@@ -358,10 +358,11 @@ main {
       height: 5020px; } }
   @media (min-width: 1400px) {
     #background {
-      height: 5700px; } }
+      height: calc(5555px + 10vw); } }
   #background svg {
     margin-left: calc(-1280px + 30vw);
     margin-top: calc(-500px + 50vh);
+    pointer-events: none;
     width: 2360px; }
     @media (min-width: 768px) {
       #background svg {
@@ -522,12 +523,12 @@ header {
       content: '';
       display: inline-block;
       height: 0;
+      left: 0;
       margin-right: 2px;
       margin-top: 5px;
       position: absolute;
       transition: 0.5s;
-      width: 10px;
-      left: 0; }
+      width: 10px; }
       @media (min-width: 576px) {
         header div a::after, header div a::before {
           width: 12px; } }
@@ -547,8 +548,8 @@ header {
     Footer
 ============= */
 footer {
-  margin-top: 500px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  margin-top: 500px; }
   @media (min-width: 768px) {
     footer {
       margin-top: 950px; } }
@@ -566,11 +567,10 @@ footer {
         justify-content: flex-start; } }
     footer div h2 {
       font-family: sofia-pro;
-      font-weight: 700;
       font-size: 1rem;
-      border-right: 100vw solid #DDA62A;
-      border-left: 100vw solid #DDA62A;
+      font-weight: 700;
       padding: 0 10px;
+      position: relative;
       white-space: nowrap; }
       @media (min-width: 576px) {
         footer div h2 {
@@ -578,18 +578,36 @@ footer {
       @media (min-width: 768px) {
         footer div h2 {
           font-size: 1.25rem;
-          border-left: calc(10vw - 30px) solid #DDA62A; } }
+          margin-left: calc(10vw - 30px); } }
       @media (min-width: 992px) {
         footer div h2 {
           font-size: 1.5rem; } }
       @media (min-width: 1400px) {
         footer div h2 {
           font-size: 1.875rem;
-          border-left: 50vw solid #DDA62A; } }
+          margin-left: 50vw; } }
+      footer div h2::after, footer div h2::before {
+        background-color: #DDA62A;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: -2; }
+        @media (min-width: 1400px) {
+          footer div h2::after, footer div h2::before {
+            bottom: 5px;
+            height: 15px;
+            top: auto; } }
+      footer div h2::before {
+        left: -100vw; }
+      footer div h2::after {
+        right: -100vw; }
       footer div h2 a {
-        text-decoration: none;
         color: #DDA62A;
-        transition: .25s; }
+        text-decoration: none;
+        transition: 0.25s; }
         footer div h2 a:hover {
           border-bottom: 5px solid #DDA62A; }
 
@@ -599,26 +617,26 @@ footer {
 #hero {
   height: 100vh; }
   #hero > div {
-    padding-top: 43vh;
-    margin-left: 5vw; }
+    margin-left: 5vw;
+    padding-top: 43vh; }
     #hero > div div {
       background-image: url("../img/universal/FullLogo.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      width: 250px;
+      display: block;
       height: 45px;
-      display: block; }
+      width: 250px; }
       @media (min-width: 768px) {
         #hero > div div {
-          width: 425px;
-          height: 75px; } }
+          height: 75px;
+          width: 425px; } }
       @media (min-width: 1400px) {
         #hero > div div {
-          width: 680px;
-          height: 115px; } }
+          height: 115px;
+          width: 680px; } }
     #hero > div h3 {
-      font-family: sofia-pro;
       color: #DDA62A;
+      font-family: sofia-pro;
       font-weight: 700;
       margin-left: 5px; }
       @media (min-width: 768px) {

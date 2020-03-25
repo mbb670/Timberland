@@ -78,17 +78,6 @@
 		"oAP": "/deploy/index.html",
 		"oF": 0
 		},
-	"/deploy/js/CustomEase.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/deploy/js/CustomEase.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/deploy/js/DrawSVGPlugin.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -2017,7 +2006,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "gsap, rellax",
+	"jsCheckerReservedNamesString": "gsap, rellax, MorphSVGPlugin, DrawSVGPlugin, MotionPathPlugin",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

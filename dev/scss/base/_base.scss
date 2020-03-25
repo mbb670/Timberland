@@ -58,12 +58,13 @@ main {
         height: 5020px;
     }
     @include xxl {
-        height: 5700px;
+        height: calc(5555px + 10vw);
     }
 
     svg {
         margin-left: calc(-1280px + 30vw);
         margin-top: calc(-500px + 50vh);
+        pointer-events: none;
         width: 2360px;
         @include md {
             margin-left: calc(-2166px + 50vw);

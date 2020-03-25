@@ -3,36 +3,38 @@
 ============= */
 #hero {
     height: 100vh;
+
     > div {
-        padding-top: 43vh;
         margin-left: 5vw;
+        padding-top: 43vh;
+
         div {
             background-image: url("../img/universal/FullLogo.svg");
             background-repeat: no-repeat;
             background-size: contain;
-            width: 250px;
-            height: 45px;
             display: block;
-            @include md{
-                width:425px;
-                height:75px;
+            height: 45px;
+            width: 250px;
+            @include md {
+                height: 75px;
+                width: 425px;
             }
-            @include xxl{
-                width:680px;
-                height:115px;
+            @include xxl {
+                height: 115px;
+                width: 680px;
             }
         }
 
         h3 {
-            font-family: sofia-pro;
             color: $gold;
+            font-family: sofia-pro;
             font-weight: 700;
             // margin-top: 10px;
             margin-left: 5px;
-            @include md{
+            @include md {
                 font-size: rem-calc(22);
             }
-            @include xxl{
+            @include xxl {
                 font-size: rem-calc(35);
                 // margin-top: 20px;
                 margin-left: 20px;

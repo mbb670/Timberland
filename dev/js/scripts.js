@@ -7,5 +7,5 @@
 
 $( document ).ready(function() {
     // console.log( "ready!" );
-    gsap.registerPlugin(MorphSVGPlugin, CSSRulePlugin, DrawSVGPlugin, CustomEase);
+    gsap.registerPlugin(MorphSVGPlugin, DrawSVGPlugin, MotionPathPlugin);
 });
