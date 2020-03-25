@@ -493,12 +493,12 @@ header {
   @media (min-width: 576px) {
     header {
       left: 5vw; } }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     header #noSM {
       display: none; } }
   header #MDPlus {
     display: none; }
-    @media (min-width: 576px) {
+    @media (min-width: 768px) {
       header #MDPlus {
         display: block; } }
   header div a {

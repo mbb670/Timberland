@@ -11,14 +11,14 @@ header {
     }
 
     #noSM {
-        @include sm {
+        @include md {
             display: none;
         }
     }
 
     #MDPlus {
         display: none;
-        @include sm {
+        @include md {
             display: block;
         }
     }
