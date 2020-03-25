@@ -27,6 +27,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/universal/Boot1.png": {
+		"ft": 32768,
+		"iS": 185266,
+		"oA": 0,
+		"oAP": "/deploy/img/universal/Boot1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/universal/Boot2.png": {
 		"ft": 32768,
 		"iS": 213238,
