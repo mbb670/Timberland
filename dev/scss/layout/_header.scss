@@ -53,6 +53,7 @@ header {
                 transition: 0.5s;
                 width: 10px;
                 // left:-20vw;
+                left:0;
                 @include sm {
                     width: 12px;
                 }

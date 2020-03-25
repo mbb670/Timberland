@@ -526,7 +526,8 @@ header {
       margin-top: 5px;
       position: absolute;
       transition: 0.5s;
-      width: 10px; }
+      width: 10px;
+      left: 0; }
       @media (min-width: 576px) {
         header div a::after, header div a::before {
           width: 12px; } }
